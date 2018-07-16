@@ -16,7 +16,7 @@ class HTMLTemplateTestCase(unittest.TestCase):
         self.assertEqual(json_data, result)
 
     def test_api_pics_by_country(self):
-        response = self.testy.get('/api/pictures/usa')
+        response = self.testy.get('/api/pictures/USA')
         self.assertEqual(response.status_code, 200)
 
         raw = response.data.decode("utf-8")
@@ -60,7 +60,7 @@ class HTMLTemplateTestCase(unittest.TestCase):
         self.assertTrue(hk in result)
 
     def test_pictures_by_country(self):
-        response = self.testy.get('/pictures/usa')
+        response = self.testy.get('/pictures/USA')
         self.assertEqual(response.status_code, 200)
 
         result = response.data.decode("utf-8")
