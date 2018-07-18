@@ -1,5 +1,5 @@
 import unittest, sys, json
-sys.path.insert(0, '..')
+# sys.path.insert(0, '..')
 from app import app
 
 class HTMLTemplateTestCase(unittest.TestCase):
